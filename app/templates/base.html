@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Parts-Of-Speech Tagging</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();   
+		});
+	</script>
+	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="{{ url_for('.static', filename='CSS/style.css') }}" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</script>
+  </head>
+  <body>
+  	<h1> Parts of Speech Tagging </h1>
+    {% block content %}{% endblock %}
+  </body>
+</html>

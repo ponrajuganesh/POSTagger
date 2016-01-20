@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="maindiv">
+	<form action="/index" method="post" name="enteredtext">
+		{{ form.hidden_tag() }}
+		{{form.enteredtext(autofocus="autofocus", placeholder="type/paste something awesome")}}
+		<input type="submit" value="Let's Submit">
+	</form>
+</div>
+{% endblock %}

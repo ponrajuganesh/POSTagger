@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="solutiondiv" style="margin:auto; width:1000px; padding:30px;">
+		{% for _dict in data %}
+		<p>
+			{% for word, pos in _dict.iteritems() %}
+				{% if pos|length > 0 %}
+					<a href="#" style="color: black; font-size: 20px; font-family: 'Montserrat', sans-serif; " data-toggle="tooltip" title="{{ pos }}" data-placement="top">{{ word }}</a>
+				{% else %}
+					{{word}}
+				{% endif %}
+			{% endfor %}
+		</p>
+		<hr>
+		{% endfor %}
+</div>
+{% endblock %}
