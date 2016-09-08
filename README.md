@@ -9,5 +9,8 @@ A flask application to show the parts of speech of every word of the document
 - Clone the repository
 - Run the command python run.py
 
-## Result
+## Screen shots
+- UI
+![alt tag](https://github.com/ponrajuganesh/POSTagger/blob/master/TaggerInput.jpg)
+- Result
 ![alt tag](https://github.com/ponrajuganesh/POSTagger/blob/master/TaggerResult.jpg)
